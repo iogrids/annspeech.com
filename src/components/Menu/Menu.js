@@ -46,16 +46,16 @@ const Menu = () => {
           </NextLink>
           <div className={classes.grow}></div>
           <div>
-            <NextLink href="#home" passHref>
+            <NextLink href="/#home" passHref>
               <Link>HOME</Link>
             </NextLink>
-            <NextLink href="#faq" passHref>
+            <NextLink href="/#faq" passHref>
               <Link>FAQ</Link>
             </NextLink>
-            <NextLink href="#testimonials" passHref>
+            <NextLink href="/#testimonials" passHref>
               <Link>TESTIMONIALS</Link>
             </NextLink>
-            <NextLink href="#contact" passHref>
+            <NextLink href="/#contact" passHref>
               <Link>CONTACT</Link>
             </NextLink>
           </div>
