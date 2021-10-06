@@ -2,7 +2,6 @@ import { Component } from 'react';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
-import { useEffect } from 'react';
 
 export default class MyDocument extends Component {
   render() {
