@@ -37,7 +37,7 @@ const Menu = () => {
 
   return (
     <Box className={classes.menuBox}>
-      <AppBar className={classes.header}>
+      <AppBar elevation={0} className={classes.header}>
         <Toolbar>
           <NextLink href="/" passHref>
             <Link>
