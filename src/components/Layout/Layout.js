@@ -45,8 +45,6 @@ const Layout = () => {
       </Grid>
       <Faq />
 
-      <Testimonials />
-
       <Contact />
 
       <Footer />
