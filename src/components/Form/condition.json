@@ -1,0 +1,66 @@
+[
+  {
+    "profile": "Child",
+    "profile_code": "child",    
+    "conditions": [
+      {
+        "name": "Autism",
+        "code": "autism"
+      },
+      {
+        "name": "Speech Delay",
+        "code": "delay"
+      },
+      {
+        "name": "Unclear Speech",
+        "code": "speech"
+      },
+      {
+        "name": "Stuttering",
+        "code": "stuttering"
+      },
+      {
+        "name": "Cleft Lip & Palate",
+        "code": "cleft"
+      },
+      {
+        "name": "Slow Learner",
+        "code": "learning"
+      },
+      {
+        "name": "Reading & Writing Issues",
+        "code": "reading"
+      },
+      {
+        "name": "Oro-Motor/Feeding Issues",
+        "code": "feeding"
+      }
+    ]
+  },
+  {
+    "profile": "Adult",
+    "profile_code": "adult",    
+    "conditions": [
+      {
+        "name": "Stroke",
+        "code": "stroke"
+      },
+      {
+        "name": "Voice Disorder",
+        "code": "voice"
+      },
+      {
+        "name": "Stuttering",
+        "code": "stuttering"
+      },
+      {
+        "name": "Pronunciation Issues",
+        "code": "pronunciation"
+      },
+      {
+        "name": "Other Speech/Feeding Issues",
+        "code": "speech"
+      }
+    ]
+  }
+]
