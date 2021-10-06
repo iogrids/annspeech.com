@@ -32,14 +32,14 @@ const Testimonials = () => {
         <div className="wrapper">
           <div className="box">
             <i className="fas fa-quote-left quote" />
-            <p>
+            <Typography variant="body1" gutterBottom component="div">
               I was very disturbed when my child was not able to speak even at
               the age of three along with difficulties such as poor eating
               skills and sensory issues. Ms.Ann gave us an insight into oral
               placement therapy which helped us in understanding the root cause
               of my child&apos;s issues. Now my child is showing progress in her
               communication skills.
-            </p>
+            </Typography>
             <div className="content">
               <div className="info">
                 <div className="name">Rachel</div>
@@ -59,7 +59,7 @@ const Testimonials = () => {
           </div>
           <div className="box">
             <i className="fas fa-quote-left quote" />
-            <p>
+            <Typography variant="body1" gutterBottom component="div">
               I had been struggling with stuttering since my childhood. I had
               low confidence and self esteem due to which I had poor social
               life. I wanted a cure from this difficulty and that’s when I
@@ -67,7 +67,7 @@ const Testimonials = () => {
               therapist. She introduced techniques and strategies that helped me
               to overcome stuttering. I am able to maintain my fluent speech and
               speak well with others these days.
-            </p>
+            </Typography>
             <div className="content">
               <div className="info">
                 <div className="name">Fatima</div>
@@ -87,13 +87,13 @@ const Testimonials = () => {
           </div>
           <div className="box">
             <i className="fas fa-quote-left quote" />
-            <p>
+            <Typography variant="body1" gutterBottom component="div">
               I had speech clarity issues from my childhood. I recently enrolled
               for speech therapy and I am glad I did. My articulation has
               improved a lot since then and now I can speak clearly. I must
               wholeheartedly thank Ms. Ann for all the help she has provided for
               improving my speech clarity.
-            </p>
+            </Typography>
             <div className="content">
               <div className="info">
                 <div className="name">Joel</div>
