@@ -54,7 +54,11 @@ export default function Faq() {
         Frequently Asked Questions
       </Typography>
 
-      <Accordion classes={{ expanded: classes.expandedPanel }} defaultExpanded>
+      <Accordion
+        elevation={0}
+        classes={{ expanded: classes.expandedPanel }}
+        defaultExpanded
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -72,7 +76,7 @@ export default function Faq() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion classes={{ expanded: classes.expandedPanel }}>
+      <Accordion elevation={0} classes={{ expanded: classes.expandedPanel }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -89,7 +93,7 @@ export default function Faq() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion classes={{ expanded: classes.expandedPanel }}>
+      <Accordion elevation={0} classes={{ expanded: classes.expandedPanel }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -115,7 +119,7 @@ export default function Faq() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion classes={{ expanded: classes.expandedPanel }}>
+      <Accordion elevation={0} classes={{ expanded: classes.expandedPanel }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
