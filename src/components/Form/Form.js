@@ -115,7 +115,7 @@ export default class Form extends Component {
           true,
           'Thank you, your message has been submitted.'
         );
-        window.location = 'http://google.com';
+        window.location = 'https://annspeech.com/thanks';
       })
       .catch((error) => {
         this.handleServerResponse(false, error.response.data.error);
