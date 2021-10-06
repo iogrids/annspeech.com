@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 const Layout = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.mainDiv} maxWidth="lg">
+    <Container className={classes.mainDiv}>
       <Menu />
 
       <Headline />
