@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
   },
   header: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#fff',
     color: 'black',
     boxShadow: '0px 0px 0px 0px',
     position: 'static',
