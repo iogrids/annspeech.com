@@ -29,7 +29,7 @@ const Video = () => {
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <Card sx={{ minWidth: 275 }}>
+          <Card elevation={0} sx={{ minWidth: 275 }}>
             <CardContent>
               <CardMedia
                 component="iframe"
@@ -40,7 +40,7 @@ const Video = () => {
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Card sx={{ minWidth: 275 }}>
+          <Card elevation={0} sx={{ minWidth: 275 }}>
             <CardContent>
               <CardMedia
                 component="iframe"

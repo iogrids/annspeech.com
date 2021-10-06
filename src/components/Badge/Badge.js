@@ -38,7 +38,7 @@ const Badge = () => {
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <Card sx={{ minWidth: 275 }}>
+          <Card elevation={0} sx={{ minWidth: 275 }}>
             <CardContent>
               <List
                 sx={{
@@ -88,7 +88,7 @@ const Badge = () => {
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Card sx={{ minWidth: 275 }}>
+          <Card elevation={0} sx={{ minWidth: 275 }}>
             <CardContent>
               <List
                 sx={{
