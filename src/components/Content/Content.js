@@ -29,8 +29,8 @@ const Content = () => {
       </Typography>
 
       <Typography variant="body1" gutterBottom>
-        It is very important that your child's communication difficulties are
-        identified and treated at the earliest. Younger the age, better the
+        It is very important that your child&apos;s communication difficulties
+        are identified and treated at the earliest. Younger the age, better the
         positive outcomes from the treatment. This is because the human brain is
         developing at a much faster rate during the first 3 years of life and
         slows down after 6 years of age. During these initial years of life, the
@@ -41,21 +41,21 @@ const Content = () => {
       <Typography variant="body1" gutterBottom>
         It is common for toddlers and young children to have SPEECH AND LANGUAGE
         DELAY, also associated with conditions such as AUTISM, ATTENTION DEFICIT
-        HYPERACTIVITY DISORDER, CHILDHOOD APRAXIA OF SPEECH, DOWN'S SYNDROME,
-        CEREBRAL PALSY, HEARING LOSS, CLEFT LIP AND PALATE etc. Reading and
-        writing disorders associated with LEARNING DISABILITY, childhood
-        STUTTERING, UNCLEAR SPEECH, ORO MOTOR AND FEEDING ISSUES are also
-        common.
+        HYPERACTIVITY DISORDER, CHILDHOOD APRAXIA OF SPEECH, DOWN&apos;S
+        SYNDROME, CEREBRAL PALSY, HEARING LOSS, CLEFT LIP AND PALATE etc.
+        Reading and writing disorders associated with LEARNING DISABILITY,
+        childhood STUTTERING, UNCLEAR SPEECH, ORO MOTOR AND FEEDING ISSUES are
+        also common.
       </Typography>
       <Typography variant="body1" gutterBottom>
         As a Speech Language Pathologist I will provide a complete assessment to
         know if your child has any of the conditions listed above, identify the
         reasons for the issues present and provide you with a treatment plan to
-        improve your child's speech, language and feeding skills. I will also
-        answer all your concerns regarding your child's speech, language and
-        feeding issues and give you strategies that has worked tremendously well
-        for the kids I have given speech therapy in various established speech
-        therapy centres.
+        improve your child&apos;s speech, language and feeding skills. I will
+        also answer all your concerns regarding your child&apos;s speech,
+        language and feeding issues and give you strategies that has worked
+        tremendously well for the kids I have given speech therapy in various
+        established speech therapy centres.
       </Typography>
 
       <Typography variant="h6" component="div" gutterBottom>
@@ -64,10 +64,10 @@ const Content = () => {
       <Typography variant="body1" gutterBottom>
         Speech and language problems in adults may have started in childhood
         (stuttering / pronunciation issues) or developed after an illness or
-        injury (stroke, parkinson's disease, dementia, oral/laryngeal cancer,
-        traumatic brain injury, voice disorders etc ). Speech and language
-        therapy focuses on improving the speech clarity, impaired language,
-        fluency, voice and communication skills in such conditions.
+        injury (stroke, parkinson&apos;s disease, dementia, oral/laryngeal
+        cancer, traumatic brain injury, voice disorders etc ). Speech and
+        language therapy focuses on improving the speech clarity, impaired
+        language, fluency, voice and communication skills in such conditions.
       </Typography>
     </Box>
   );
