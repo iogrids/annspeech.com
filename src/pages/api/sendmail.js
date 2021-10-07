@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-async function sendEmail(req, res) {
+async function sendMail(req, res) {
   //const { firstName, lastName, email, message } = JSON.parse(req.body);
 
   const firstName = 'jeril';
@@ -10,11 +10,11 @@ async function sendEmail(req, res) {
 
   const transporter = nodemailer.createTransport({
     port: 587,
-    host: 'smtp.mailgun.org',
+    host: 'smtp.sendgrid.net',
     secure: false,
     auth: {
-      user: 'postmaster@sandbox1b965b730cb9406a961ec57415c301d4.mailgun.org',
-      pass: 'ef26107c6f1af90753a6b54ad7d36c33-aff8aa95-30fe5f32',
+      user: 'apikey',
+      pass: process.env.SENDGRID_API_KEY,
     },
     tls: {
       ciphers: 'SSLv3',
@@ -62,4 +62,4 @@ async function sendEmail(req, res) {
   res.status(200).json({ status: 'OK' });
 }
 
-export default sendEmail;
+export default sendMail;

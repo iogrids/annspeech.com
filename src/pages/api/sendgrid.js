@@ -8,8 +8,8 @@ async function sendGrid(req, res) {
     await sendgrid.send({
       to: 'jerilcj3@gmail.com', // Your email where you'll receive emails
       from: 'maria@annspeech.com', // your website email address here
-      subject: `Email three`,
-      html: `<div>You've got a mail, three</div>`,
+      subject: `jokers`,
+      html: `<div>Jokers</div>`,
     });
   } catch (error) {
     // console.log(error);
