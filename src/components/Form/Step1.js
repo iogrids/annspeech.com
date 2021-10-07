@@ -104,27 +104,18 @@ class Step1 extends Component {
               className={classes.field}
               onChange={handleChange('firstName')}
               defaultValue={values.firstName}
-              type="text"
-              id="name"
-              name="name"
             />
             <label className={classes.label}>Email:</label>
             <InputBase
               className={classes.field}
               onChange={handleChange('userEmail')}
               defaultValue={values.userEmail}
-              type="text"
-              id="userEmail"
-              name="userEmail"
             />
             <label className={classes.label}>Phone:</label>
             <InputBase
               className={classes.field}
               onChange={handleChange('phone')}
               defaultValue={values.phone}
-              type="text"
-              id="phone"
-              name="phone"
             />
             <label className={classes.label}>Country:</label>
             <CountryDropdown
