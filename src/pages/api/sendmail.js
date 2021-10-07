@@ -37,7 +37,7 @@ async function sendMail(req, res) {
   const mailData = {
     from: {
       name: `${firstName} ${lastName}`,
-      address: 'jerilcj3@gmail.com',
+      address: 'maria@annspeech.com',
     },
     replyTo: email,
     to: 'jerilcj3@gmail.com',
