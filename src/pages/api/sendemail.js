@@ -15,6 +15,7 @@ async function sendEmail(req, res) {
       user: 'postmaster@sandbox1b965b730cb9406a961ec57415c301d4.mailgun.org',
       pass: 'ef26107c6f1af90753a6b54ad7d36c33-aff8aa95-30fe5f32',
     },
+    secure: true,
     tls: {
       ciphers: 'SSLv3',
     },
