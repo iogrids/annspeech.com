@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import '../styles/globals.css';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -8,7 +9,14 @@ function MyApp({ Component, pageProps }) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="viewport-fit=cover" />
+      </Head>
+      <Component {...pageProps} />{' '}
+    </>
+  );
 }
 
 export default MyApp;

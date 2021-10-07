@@ -8,11 +8,24 @@ export default class MyDocument extends Component {
     return (
       <Html lang="en">
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <link
             href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
             rel="stylesheet"
+          />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-944956101"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-944956101', { page_path: window.location.pathname });
+            `,
+            }}
           />
         </Head>
         <body>
