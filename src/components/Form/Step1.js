@@ -154,6 +154,7 @@ class Step1 extends Component {
             />
             <Button
               className={classes.continue}
+              color="success"
               variant="contained"
               fullWidth
               onClick={this.continue}

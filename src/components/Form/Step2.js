@@ -205,7 +205,7 @@ class Step2 extends Component {
             >
               <Button
                 className={classes.continue}
-                color="secondary"
+                color="success"
                 variant="contained"
                 onClick={this.back}
               >
@@ -213,6 +213,7 @@ class Step2 extends Component {
               </Button>
               <Button
                 className={classes.continue}
+                color="success"
                 variant="contained"
                 onClick={(e) => {
                   {
