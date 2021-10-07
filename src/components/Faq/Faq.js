@@ -91,7 +91,7 @@ export default function Faq() {
       <Accordion elevation={0} classes={{ expanded: classes.expandedPanel }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
+          aria-controls="panel3a-content"
           id="panel3a-header"
         >
           <Typography className={classes.heading} variant="body1">
@@ -117,7 +117,7 @@ export default function Faq() {
       <Accordion elevation={0} classes={{ expanded: classes.expandedPanel }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
+          aria-controls="panel4a-content"
           id="panel4a-header"
         >
           <Typography className={classes.heading} variant="body1">
