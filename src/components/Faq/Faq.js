@@ -20,11 +20,8 @@ const useStyles = makeStyles((theme) => ({
     color: '#00b0f0',
     fontWeight: 600,
   },
-  heading: {
-    fontWeight: theme.typography.fontWeightRegular,
-  },
+  heading: {},
   content: {
-    fontWeight: theme.typography.fontWeightRegular,
     textAlign: 'center',
   },
   expandedPanel: {
