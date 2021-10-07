@@ -62,12 +62,12 @@ export default function Faq() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading} variant="overline">
+          <Typography className={classes.heading} variant="body1">
             How is evaluation done? Is it through video calls?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.content} variant="inherit">
+          <Typography className={classes.content} variant="body1">
             I will get in touch with you initially over emails. This will help
             me in preparing for the evaluation session. Following this, a video
             session for assessment will be scheduled mostly on Zoom.
@@ -80,12 +80,12 @@ export default function Faq() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading} variant="overline">
+          <Typography className={classes.heading} variant="body1">
             What is the duration of each session?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.content} variant="inherit">
+          <Typography className={classes.content} variant="body1">
             An assessment session will be for one hour and each therapy session
             will be for 45 minutes.
           </Typography>
@@ -97,12 +97,12 @@ export default function Faq() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading} variant="overline">
+          <Typography className={classes.heading} variant="body1">
             Does online speech therapy work for children?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.content} variant="inherit">
+          <Typography className={classes.content} variant="body1">
             Researches show that online speech therapy (aka telepractice) can
             provide the same results as offline sessions. Telepractice is an
             effective, evidenced based program that works well for both kids and
@@ -123,12 +123,12 @@ export default function Faq() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading} variant="overline">
+          <Typography className={classes.heading} variant="body1">
             How well online therapy works for adults?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.content} variant="inherit">
+          <Typography className={classes.content} variant="body1">
             Online speech therapy works well for adults with
             stuttering/stammering, pronunciation difficulties, voice issues,
             communication difficulties due to stroke, parkinsons disease,
