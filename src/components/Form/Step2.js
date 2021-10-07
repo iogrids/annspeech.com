@@ -170,27 +170,30 @@ class Step2 extends Component {
               options={Genres}
               variant="filled"
             ></Select>
-            <label className={classes.label}>Choose condition:</label>
-            <Select
-              className={classes.field}
-              styles={customStyles}
-              value={values.selectedOption2}
-              onChange={handleDropdown3}
-              /*onChange={(val) => {
+            <label className={classes.label}>
+              Choose condition:
+              <Select
+                className={classes.field}
+                styles={customStyles}
+                value={values.selectedOption2}
+                onChange={handleDropdown3}
+                /*onChange={(val) => {
                 handleDropdown('condition', val);
               }}*/
-              options={filteredOptions}
-            ></Select>
-            <label className={classes.label}>Detailed Description:</label>
-            <InputBase
-              className={classes.field}
-              onChange={handleChange('description')}
-              defaultValue={values.description}
-              fullWidth
-              id="filled-basic"
-              multiline
-              variant="standard"
-            />
+                options={filteredOptions}
+              ></Select>
+            </label>
+            <label className={classes.label}>
+              Detailed Description:
+              <InputBase
+                className={classes.field}
+                onChange={handleChange('description')}
+                defaultValue={values.description}
+                fullWidth
+                id="filled-basic"
+                multiline
+              />
+            </label>
             <ButtonGroup
               fullWidth
               variant="contained"

@@ -98,44 +98,53 @@ class Step1 extends Component {
             <legend>
               <span className={classes.number}>1</span> Your Basic Info
             </legend>
-            <label className={classes.label}>Name:</label>
-            <InputBase
-              variant="standard"
-              className={classes.field}
-              onChange={handleChange('firstName')}
-              defaultValue={values.firstName}
-            />
-            <label className={classes.label}>Email:</label>
-            <InputBase
-              className={classes.field}
-              onChange={handleChange('userEmail')}
-              defaultValue={values.userEmail}
-            />
-            <label className={classes.label}>Phone:</label>
-            <InputBase
-              className={classes.field}
-              onChange={handleChange('phone')}
-              defaultValue={values.phone}
-            />
-            <label className={classes.label}>Country:</label>
-            <CountryDropdown
-              className={classes.field}
-              value={values.country}
-              onChange={(val) => {
-                //this.selectCountry(val);
-                handleDropdown('country', val);
-              }}
-            />
-            <label className={classes.label}>Region:</label>
-            <RegionDropdown
-              className={classes.field}
-              country={values.country}
-              value={values.region}
-              onChange={(val) => {
-                //this.selectRegion(val);
-                handleDropdown('region', val);
-              }}
-            />
+            <label className={classes.label}>
+              Name:
+              <InputBase
+                className={classes.field}
+                onChange={handleChange('firstName')}
+                defaultValue={values.firstName}
+              />
+            </label>
+            <label className={classes.label}>
+              Email:
+              <InputBase
+                className={classes.field}
+                onChange={handleChange('userEmail')}
+                defaultValue={values.userEmail}
+              />
+            </label>
+            <label className={classes.label}>
+              Phone:
+              <InputBase
+                className={classes.field}
+                onChange={handleChange('phone')}
+                defaultValue={values.phone}
+              />
+            </label>
+            <label className={classes.label}>
+              Country:
+              <CountryDropdown
+                className={classes.field}
+                value={values.country}
+                onChange={(val) => {
+                  //this.selectCountry(val);
+                  handleDropdown('country', val);
+                }}
+              />
+            </label>
+            <label className={classes.label}>
+              Region:
+              <RegionDropdown
+                className={classes.field}
+                country={values.country}
+                value={values.region}
+                onChange={(val) => {
+                  //this.selectRegion(val);
+                  handleDropdown('region', val);
+                }}
+              />
+            </label>
             <Button
               style={{
                 height: '50px',
