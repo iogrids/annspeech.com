@@ -1,7 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import CardMedia from '@mui/material/CardMedia';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import { makeStyles } from '@material-ui/core';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -31,10 +32,9 @@ const Video = () => {
         <Grid item xs={12} md={6}>
           <Card elevation={0} sx={{ minWidth: 275 }}>
             <CardContent>
-              <CardMedia
-                component="iframe"
-                title="test"
-                src="https://www.youtube.com/embed/Pz6sle4QxWQ"
+              <LiteYouTubeEmbed
+                id="Pz6sle4QxWQ"
+                title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
               />
             </CardContent>
           </Card>
@@ -42,10 +42,9 @@ const Video = () => {
         <Grid item xs={12} md={6}>
           <Card elevation={0} sx={{ minWidth: 275 }}>
             <CardContent>
-              <CardMedia
-                component="iframe"
-                title="test"
-                src="https://www.youtube.com/embed/d7TPbJ6Dtd0"
+              <LiteYouTubeEmbed
+                id="d7TPbJ6Dtd0"
+                title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
               />
             </CardContent>
           </Card>
