@@ -1,7 +1,6 @@
 import sendgrid from '@sendgrid/mail';
 
-var SENDGRID_APY_KEY =
-  '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';
+var SENDGRID_APY_KEY(process.env.SENDGRID_API_KEY);
 
 sendgrid.setApiKey(SENDGRID_APY_KEY);
 
