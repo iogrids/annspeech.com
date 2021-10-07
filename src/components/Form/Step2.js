@@ -56,12 +56,6 @@ const styles = (theme) => ({
     margin: '0 0 30px',
   },
 
-  continue: {
-    height: theme.spacing(6),
-    marginTop: theme.spacing(1),
-    color: '#fff',
-    backgroundColor: '#4bc970',
-  },
   buttonGroup: {
     gap: '5px',
   },
@@ -204,14 +198,22 @@ class Step2 extends Component {
               className={classes.buttonGroup}
             >
               <Button
-                className={classes.continue}
+                style={{
+                  height: '50px',
+                  color: '#fff',
+                  backgroundColor: '#4bc970',
+                }}
                 variant="contained"
                 onClick={this.back}
               >
                 Back
               </Button>
               <Button
-                className={classes.continue}
+                style={{
+                  height: '50px',
+                  color: '#fff',
+                  backgroundColor: '#4bc970',
+                }}
                 variant="contained"
                 onClick={(e) => {
                   {

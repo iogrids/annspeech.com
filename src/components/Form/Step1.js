@@ -56,13 +56,6 @@ const styles = (theme) => ({
     boxShadow: 'inset 0 1px 0 rgb(0 0 0 / 3%)',
     margin: '0 0 30px',
   },
-
-  continue: {
-    height: theme.spacing(6),
-    marginTop: theme.spacing(1),
-    color: '#fff',
-    backgroundColor: '#4bc970',
-  },
 });
 
 class Step1 extends Component {
@@ -153,7 +146,11 @@ class Step1 extends Component {
               }}
             />
             <Button
-              className={classes.continue}
+              style={{
+                height: '50px',
+                color: '#fff',
+                backgroundColor: '#4bc970',
+              }}
               variant="contained"
               fullWidth
               onClick={this.continue}
