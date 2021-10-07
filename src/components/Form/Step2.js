@@ -213,7 +213,6 @@ class Step2 extends Component {
               </Button>
               <Button
                 className={classes.continue}
-                color="primary"
                 variant="contained"
                 onClick={(e) => {
                   {
