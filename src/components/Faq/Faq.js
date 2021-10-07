@@ -92,7 +92,7 @@ export default function Faq() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
-          id="panel2a-header"
+          id="panel3a-header"
         >
           <Typography className={classes.heading} variant="body1">
             Does online speech therapy work for children?
@@ -118,7 +118,7 @@ export default function Faq() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
-          id="panel2a-header"
+          id="panel4a-header"
         >
           <Typography className={classes.heading} variant="body1">
             How well online therapy works for adults?
