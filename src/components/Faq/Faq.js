@@ -2,6 +2,7 @@ import { Data } from './Data';
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import { Box } from '@mui/system';
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -37,12 +38,12 @@ const Faq = () => {
         <div className="faqs-container">
           {Data.map((item, index) => {
             return (
-              <div
+              <Box
                 key={index}
                 className="faq-singular"
                 onClick={() => toggle(index)}
               >
-                <div>
+                <Box>
                   <Typography
                     className="faq-question"
                     variant="body1"
@@ -51,19 +52,18 @@ const Faq = () => {
                     {item.question}
                   </Typography>
 
-                  <div
+                  <Box
+                    sx={{ padding: '0 0 20px 0' }}
                     className={
                       clicked === index ? 'faq-answer-show' : 'faq-answer'
                     }
                   >
-                    <div>
-                      <Typography variant="body1" component="div">
-                        {item.answer}
-                      </Typography>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    <Typography variant="body1" component="div">
+                      {item.answer}
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
             );
           })}
         </div>
