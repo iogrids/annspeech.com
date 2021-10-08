@@ -5,9 +5,6 @@ async function sendMail(req, res) {
   const fromName = 'Maria';
   const fromEmail = 'maria@annspeech.com';
 
-  console.log(email, fullname, subject, message);
-  return;
-
   const transporter = nodemailer.createTransport({
     port: 587,
     host: 'smtp.sendgrid.net',
