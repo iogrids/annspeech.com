@@ -5,9 +5,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 const useStyles = makeStyles((theme) => ({
-  mainDiv: {
-    marginBottom: theme.spacing(5),
-  },
+  mainDiv: {},
   heading: {
     textAlign: 'center',
     color: '#00b0f0',
@@ -21,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 const Headline = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.mainDiv}>
+    <Box spacing={3} className={classes.mainDiv}>
       <Typography
         className={classes.heading}
         variant="h3"

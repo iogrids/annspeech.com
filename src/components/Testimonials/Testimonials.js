@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: 'center',
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(3),
     color: '#00b0f0',
     fontWeight: 600,
   },

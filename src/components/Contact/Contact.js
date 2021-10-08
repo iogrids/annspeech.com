@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 const useStyles = makeStyles((theme) => ({
   heading: {
     textAlign: 'center',
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(3),
     color: '#00b0f0',
     fontWeight: 600,
   },

@@ -11,12 +11,10 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     margin: '0 auto',
     display: 'block',
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(5),
   },
   title: {
     textAlign: 'center',
-    marginBottom: theme.spacing(5),
+    marginTop: theme.spacing(3),
     color: '#00b0f0',
     fontWeight: 600,
   },
@@ -39,7 +37,7 @@ export default function Faq() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.root}>
+    <Box spacing={3} className={classes.root}>
       <Typography
         className={classes.title}
         variant="h4"

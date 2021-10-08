@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 const Content = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.mainDiv}>
+    <Box spacing={3} className={classes.mainDiv}>
       <Typography
         className={classes.title}
         variant="h3"
