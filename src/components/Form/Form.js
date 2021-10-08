@@ -141,6 +141,8 @@ export default class Form extends Component {
           true,
           'Thank you, your message has been submitted.'
         );
+      })
+      .then((response) => {
         this.handleEmail();
         window.location = 'https://annspeech.com/thanks';
       })
