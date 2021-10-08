@@ -15,14 +15,8 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: '0 auto',
     display: 'block',
-    width: '160px',
-    height: '46px',
-    lineHeight: '46px',
     color: '#fff',
     background: 'green',
-    textAlign: 'center',
-    borderRadius: '6px',
-    fontSize: '18px',
   },
 }));
 
