@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
   },
   body: {
     textAlign: 'center',
+    fontSize: theme.spacing(3),
+    fontWeight: 600,
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(20),
   },
 }));
 
@@ -33,9 +37,9 @@ const ThanksLayout = ({ children }) => {
       </Typography>
       <Typography
         className={classes.body}
-        variant="h5"
+        variant="body1"
         gutterBottom
-        component="p"
+        component="div"
       >
         In response to your inquiry, I have send the necessary information to
         your email. If you cannot see it in your inbox, kindly check your
