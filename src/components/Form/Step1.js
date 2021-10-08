@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 const styles = (theme) => ({
   form: {
     background: '#f4f7f8',
-    width: '390px',
+    maxWidth: '100%',
     margin: '0 auto',
   },
   number: {
