@@ -1,8 +1,10 @@
 const nodemailer = require('nodemailer');
 
 async function sendMail(req, res) {
+  const { email, fullname, subject, message } = JSON.parse(req.body);
   const fromName = 'Maria';
-  const fromAddress = 'maria@annspeech.com';
+  const fromEmail = 'maria@annspeech.com';
+
   const transporter = nodemailer.createTransport({
     port: 587,
     host: 'smtp.sendgrid.net',
@@ -32,13 +34,13 @@ async function sendMail(req, res) {
   const mailData = {
     from: {
       name: `${fromName}`,
-      address: `${fromAddress}`,
+      address: `${fromEmail}`,
     },
-    replyTo: `${fromAddress}`,
-    to: `${req.body.email}`,
-    subject: `${req.body.subject}`,
-    text: `${req.body.subject}`,
-    html: '<p>this is a test message from client side</p>',
+    replyTo: email,
+    to: `${email}`,
+    subject: `${subject}`,
+    text: message,
+    html: `${message}`,
   };
 
   await new Promise((resolve, reject) => {

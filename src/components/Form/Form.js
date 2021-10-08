@@ -100,7 +100,7 @@ export default class Form extends Component {
       console.log(error);
       return;
     }
-    console.log(fullname, email, subject, message);
+    console.log(firstName, userEmail, subject, message);
   };
 
   handleSubmit = (e) => {
