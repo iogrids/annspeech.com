@@ -43,7 +43,13 @@ const Faq = () => {
                 onClick={() => toggle(index)}
               >
                 <div>
-                  <h3 className="faq-question">{item.question}</h3>
+                  <Typography
+                    className="faq-question"
+                    variant="body1"
+                    component="div"
+                  >
+                    {item.question}
+                  </Typography>
 
                   <div
                     className={
@@ -51,7 +57,9 @@ const Faq = () => {
                     }
                   >
                     <div>
-                      <p>{item.answer}</p>
+                      <Typography variant="body1" component="div">
+                        {item.answer}
+                      </Typography>
                     </div>
                   </div>
                 </div>
