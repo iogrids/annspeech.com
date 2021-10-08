@@ -1,12 +1,12 @@
 const nodemailer = require('nodemailer');
 
 async function sendMail(req, res) {
-  //const { firstName, lastName, email, message } = JSON.parse(req.body);
+  const { email, fullname, subject, message } = JSON.parse(req.body);
+  const fromName = 'Maria';
+  const fromEmail = 'maria@annspeech.com';
 
-  const firstName = 'jeril';
-  const lastName = 'jose';
-  const email = 'dsdsdds';
-  const message = 'sdsssd';
+  console.log(email, fullname, subject, message);
+  return;
 
   const transporter = nodemailer.createTransport({
     port: 587,
@@ -36,12 +36,12 @@ async function sendMail(req, res) {
 
   const mailData = {
     from: {
-      name: `${firstName} ${lastName}`,
-      address: 'maria@annspeech.com',
+      name: `${fromName}`,
+      address: `${fromEmail}`,
     },
     replyTo: email,
-    to: 'jerilcj3@gmail.com',
-    subject: `form message`,
+    to: `${email}`,
+    subject: `${subject}`,
     text: message,
     html: `${message}`,
   };

@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     body1: {
       // write global css styles here

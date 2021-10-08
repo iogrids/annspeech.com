@@ -77,6 +77,32 @@ export default class Form extends Component {
     }
   };
 
+  handleEmail = async () => {
+    const { firstName, userEmail } = this.state;
+    const values = { firstName, userEmail };
+    const subject = 'Greeting from annspeech.com';
+    const message = 'How are you preena';
+    const res = await fetch('/api/sendmail', {
+      body: JSON.stringify({
+        email: values.userEmail,
+        fullname: values.firstName,
+        subject: subject,
+        message: message,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    console.log(fullname, email, subject, message);
+  };
+
   handleSubmit = (e) => {
     const {
       step,
@@ -115,6 +141,7 @@ export default class Form extends Component {
           true,
           'Thank you, your message has been submitted.'
         );
+        this.handleEmail();
         window.location = 'https://annspeech.com/thanks';
       })
       .catch((error) => {
