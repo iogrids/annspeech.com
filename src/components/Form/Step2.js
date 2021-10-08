@@ -157,7 +157,7 @@ class Step2 extends Component {
             <legend>
               <span className={classes.number}>2</span> Your Basic Info
             </legend>
-            <label className={classes.label}>Gender:</label>
+            <label className={classes.label}>Patient Type:</label>
             <Select
               className={classes.field}
               styles={customStyles}

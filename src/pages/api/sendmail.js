@@ -1,8 +1,20 @@
 const nodemailer = require('nodemailer');
+const hbs = require('nodemailer-express-handlebars');
 
 async function sendMail(req, res) {
   const fromName = 'Maria';
   const fromAddress = 'maria@annspeech.com';
+
+  const patientType = req.body.patientType;
+
+  let htmlTemplate;
+
+  if (patientType === 'Child') {
+    htmlTemplate = 'child';
+  } else {
+    htmlTemplate = 'adult';
+  }
+
   const transporter = nodemailer.createTransport({
     port: 587,
     host: 'smtp.sendgrid.net',
@@ -15,6 +27,14 @@ async function sendMail(req, res) {
       ciphers: 'SSLv3',
     },
   });
+
+  transporter.use(
+    'compile',
+    hbs({
+      viewEngine: 'express-handlebars',
+      viewPath: '../../../views/',
+    })
+  );
 
   await new Promise((resolve, reject) => {
     // verify connection configuration
@@ -38,7 +58,7 @@ async function sendMail(req, res) {
     to: `${req.body.email}`,
     subject: `${req.body.subject}`,
     text: `${req.body.subject}`,
-    html: '<p>this is a test message from client side</p>',
+    html: `${htmlTemplate}`,
   };
 
   await new Promise((resolve, reject) => {

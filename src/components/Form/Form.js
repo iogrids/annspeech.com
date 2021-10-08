@@ -78,8 +78,8 @@ export default class Form extends Component {
   };
 
   handleEmail = async () => {
-    const { firstName, userEmail } = this.state;
-    const values = { firstName, userEmail };
+    const { firstName, userEmail, selectedOption } = this.state;
+    const values = { firstName, userEmail, selectedOption };
     const subject = 'Greeting from annspeech.com';
     const message = 'How are you preena';
     const res = await fetch('/api/sendmail', {
@@ -88,6 +88,7 @@ export default class Form extends Component {
         fullname: values.firstName,
         subject: subject,
         message: message,
+        patientType: values.selectedOption.value,
       }),
       headers: {
         'Content-Type': 'application/json',
@@ -144,7 +145,7 @@ export default class Form extends Component {
       })
       .then((response) => {
         this.handleEmail();
-        window.location = 'https://annspeech.com/thanks';
+        window.location = 'http://localhost:3000/thanks';
       })
       .catch((error) => {
         this.handleServerResponse(false, error.response.data.error);
