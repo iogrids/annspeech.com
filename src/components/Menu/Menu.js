@@ -42,13 +42,12 @@ const Menu = () => {
     <Box className={classes.menuBox}>
       <AppBar elevation={0} className={classes.header}>
         <Toolbar>
-          <Box textAlign={{ xs: 'center' }}>
-            <NextLink href="/" passHref>
-              <Link>
-                <Image src={logo} alt="logo" />
-              </Link>
-            </NextLink>
-          </Box>
+          <NextLink href="/" passHref>
+            <Link>
+              <Image src={logo} alt="logo" />
+            </Link>
+          </NextLink>
+
           <div className={classes.grow}></div>
           <Box display={{ xs: 'none', md: 'block', lg: 'block' }}>
             <NextLink href="/#home" passHref>
