@@ -145,7 +145,7 @@ export default class Form extends Component {
       })
       .then((response) => {
         this.handleEmail();
-        window.location = 'http://localhost:3000/thanks';
+        window.location = 'https://annspeech.com/thanks';
       })
       .catch((error) => {
         this.handleServerResponse(false, error.response.data.error);
