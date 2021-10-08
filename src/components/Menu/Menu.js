@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
       color: '#00b0f0',
     },
   },
+  link: {
+    padding: theme.spacing(1),
+  },
   logo: {},
 }));
 
@@ -39,26 +42,28 @@ const Menu = () => {
     <Box className={classes.menuBox}>
       <AppBar elevation={0} className={classes.header}>
         <Toolbar>
-          <NextLink href="/" passHref>
-            <Link>
-              <Image src={logo} alt="logo" />
-            </Link>
-          </NextLink>
+          <Box textAlign={{ xs: 'center' }}>
+            <NextLink href="/" passHref>
+              <Link>
+                <Image src={logo} alt="logo" />
+              </Link>
+            </NextLink>
+          </Box>
           <div className={classes.grow}></div>
-          <div>
+          <Box display={{ xs: 'none', md: 'block', lg: 'block' }}>
             <NextLink href="/#home" passHref>
-              <Link>HOME</Link>
+              <Link className={classes.link}>HOME</Link>
             </NextLink>
             <NextLink href="/#faq" passHref>
-              <Link>FAQ</Link>
+              <Link className={classes.link}>FAQ</Link>
             </NextLink>
             <NextLink href="/#testimonials" passHref>
-              <Link>TESTIMONIALS</Link>
+              <Link className={classes.link}>TESTIMONIALS</Link>
             </NextLink>
             <NextLink href="/#contact" passHref>
-              <Link>CONTACT</Link>
+              <Link className={classes.link}>CONTACT</Link>
             </NextLink>
-          </div>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
