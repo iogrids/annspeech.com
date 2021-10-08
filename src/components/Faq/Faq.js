@@ -37,7 +37,7 @@ export default function Faq() {
   const classes = useStyles();
 
   return (
-    <Box spacing={3} className={classes.root}>
+    <Box spacing={3} className={classes.root} id="faq">
       <Typography
         className={classes.title}
         variant="h4"

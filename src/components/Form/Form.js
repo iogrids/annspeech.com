@@ -162,7 +162,7 @@ export default class Form extends Component {
     switch (step) {
       case 1:
         return (
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} id="contact">
             <Step1
               nextStep={this.nextStep}
               handleChange={this.handleChange}
