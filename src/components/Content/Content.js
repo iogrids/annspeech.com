@@ -59,7 +59,12 @@ const Content = () => {
           various established speech therapy centres.
         </Typography>
 
-        <Typography variant="h6" component="div" gutterBottom>
+        <Typography
+          variant="h5"
+          style={{ fontWeight: 600 }}
+          component="div"
+          gutterBottom
+        >
           Speech Therapy for Adults
         </Typography>
         <Typography variant="body1" gutterBottom>

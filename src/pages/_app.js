@@ -1,6 +1,16 @@
 import { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    body1: {
+      // write global css styles here
+    },
+  },
+});
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -14,7 +24,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Component {...pageProps} />{' '}
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />{' '}
+      </ThemeProvider>
     </>
   );
 }
