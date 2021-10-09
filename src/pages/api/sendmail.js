@@ -61,7 +61,7 @@ async function sendMail(req, res) {
     to: `${req.body.email}`,
     subject: `${req.body.subject}`,
     text: 'how are you',
-    html: '<p>sdssd</p>',
+    html: '<h1>sdssd</h1>',
   };
 
   await new Promise((resolve, reject) => {
