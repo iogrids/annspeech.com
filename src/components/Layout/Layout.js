@@ -13,6 +13,7 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import { makeStyles } from '@material-ui/core';
 import Video from '../Video/Video';
+import Pricing from '../Pricing/Pricing';
 
 const useStyles = makeStyles((theme) => ({
   mainDiv: {},
@@ -44,7 +45,9 @@ const Layout = () => {
         </Grid>
       </Grid>
       <Faq />
+
       <Testimonials />
+
       <Contact />
 
       <Footer />
