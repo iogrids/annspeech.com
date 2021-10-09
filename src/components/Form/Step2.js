@@ -6,6 +6,11 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Box from '@mui/material/Box';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 const styles = (theme) => ({
   form: {
@@ -72,6 +77,7 @@ class Step2 extends Component {
     const {
       values,
       handleChange,
+      handleRadio,
       handleDropdown,
       handleDropdown2,
       handleDropdown3,
@@ -182,6 +188,30 @@ class Step2 extends Component {
               }}*/
                 options={filteredOptions}
               ></Select>
+            </label>
+            <label className={classes.label}>
+              Willing for Online Speech Therapy?
+              <RadioGroup
+                className={classes.field}
+                row
+                aria-label="onlineWilling"
+                name="row-radio-buttons-group"
+                value={values.WillingForOnlineTherapy}
+                onChange={handleRadio('WillingForOnlineTherapy')}
+              >
+                <FormControlLabel
+                  className={classes.label}
+                  value="yes"
+                  control={<Radio />}
+                  label="Yes"
+                />
+                <FormControlLabel
+                  className={classes.label}
+                  value="no"
+                  control={<Radio />}
+                  label="No"
+                />
+              </RadioGroup>
             </label>
             <label className={classes.label}>
               Detailed Description:

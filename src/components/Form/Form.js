@@ -21,6 +21,7 @@ export default class Form extends Component {
     region: '',
     gender: '',
     condition: '',
+    WillingForOnlineTherapy: '',
     description: '',
     selectedOption: {},
     selectedOption2: {},
@@ -60,6 +61,10 @@ export default class Form extends Component {
 
   handleDropdown3 = (selectedOption) => {
     this.setState({ selectedOption2: selectedOption });
+  };
+
+  handleRadio = (input) => (e) => {
+    this.setState({ [input]: e.target.value });
   };
 
   handleServerResponse = (ok, msg) => {
@@ -114,6 +119,7 @@ export default class Form extends Component {
       region,
       gender,
       condition,
+      WillingForOnlineTherapy,
       description,
       selectedOption,
       selectedOption2,
@@ -126,6 +132,7 @@ export default class Form extends Component {
       region,
       gender,
       condition,
+      WillingForOnlineTherapy,
       description,
       selectedOption,
       selectedOption2,
@@ -162,6 +169,7 @@ export default class Form extends Component {
       region,
       gender,
       condition,
+      WillingForOnlineTherapy,
       description,
       selectedOption,
       selectedOption2,
@@ -179,6 +187,7 @@ export default class Form extends Component {
       region,
       gender,
       condition,
+      WillingForOnlineTherapy,
       description,
       selectedOption,
       selectedOption2,
@@ -211,6 +220,7 @@ export default class Form extends Component {
               handleDropdown={this.handleDropdown}
               handleDropdown2={this.handleDropdown2}
               handleDropdown3={this.handleDropdown3}
+              handleRadio={this.handleRadio}
               handleSubmit={this.handleSubmit}
               values={values}
             />
