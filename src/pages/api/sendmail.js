@@ -1,14 +1,11 @@
 const nodemailer = require('nodemailer');
-
-/*
 import * as handlebars from 'handlebars';
 import * as fs from 'fs';
-import * as path from 'path'; */
+import * as path from 'path';
 
 async function sendMail(req, res) {
-  //const patientType = req.body.patientType;
+  const patientType = req.body.patientType;
 
-  /*
   let filePath;
 
   if (patientType === 'Child') {
@@ -23,8 +20,6 @@ async function sendMail(req, res) {
     firstName: `${req.body.fullname}`,
   };
   const htmlToSend = template(replacements);
-
-  */
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.sendgrid.net',
@@ -61,7 +56,7 @@ async function sendMail(req, res) {
     to: `${req.body.email}`,
     subject: `${req.body.subject}`,
     text: 'how are you',
-    html: '<h1>sdssd</h1>',
+    html: `${htmlToSend}`,
   };
 
   await new Promise((resolve, reject) => {
