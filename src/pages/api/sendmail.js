@@ -52,7 +52,7 @@ async function sendMail(req, res) {
     to: `${req.body.email}`,
     subject: `${req.body.subject}`,
     text: 'how are you',
-    html: htmlToSend,
+    html: <p>sdssd</p>,
   };
 
   await new Promise((resolve, reject) => {
