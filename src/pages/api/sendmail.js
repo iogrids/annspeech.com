@@ -1,4 +1,4 @@
-import * as nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 import * as handlebars from 'handlebars';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -20,6 +20,7 @@ async function sendMail(req, res) {
     firstName: `${req.body.fullname}`,
   };
   const htmlToSend = template(replacements);
+
   const transporter = nodemailer.createTransport({
     host: 'smtp.sendgrid.net',
     port: 587,
