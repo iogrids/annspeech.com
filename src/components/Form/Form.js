@@ -25,6 +25,7 @@ export default class Form extends Component {
     description: '',
     selectedOption: {},
     selectedOption2: {},
+    languageSelected: {},
     submitted: 'false',
     submitting: 'false',
     info: { error: 'false', msg: 'null' },
@@ -61,6 +62,10 @@ export default class Form extends Component {
 
   handleDropdown3 = (selectedOption) => {
     this.setState({ selectedOption2: selectedOption });
+  };
+
+  handleDropdown4 = (selectedOption) => {
+    this.setState({ languageSelected: selectedOption });
   };
 
   handleRadio = (input) => (e) => {
@@ -123,6 +128,7 @@ export default class Form extends Component {
       description,
       selectedOption,
       selectedOption2,
+      languageSelected,
     } = this.state;
     const values = {
       firstName,
@@ -136,6 +142,7 @@ export default class Form extends Component {
       description,
       selectedOption,
       selectedOption2,
+      languageSelected,
     };
     e.preventDefault();
 
@@ -173,6 +180,7 @@ export default class Form extends Component {
       description,
       selectedOption,
       selectedOption2,
+      languageSelected,
       submitted,
       submitting,
       info,
@@ -191,6 +199,7 @@ export default class Form extends Component {
       description,
       selectedOption,
       selectedOption2,
+      languageSelected,
       submitted,
       submitting,
       info,
@@ -220,6 +229,7 @@ export default class Form extends Component {
               handleDropdown={this.handleDropdown}
               handleDropdown2={this.handleDropdown2}
               handleDropdown3={this.handleDropdown3}
+              handleDropdown4={this.handleDropdown4}
               handleRadio={this.handleRadio}
               handleSubmit={this.handleSubmit}
               values={values}

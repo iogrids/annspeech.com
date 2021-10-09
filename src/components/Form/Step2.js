@@ -9,8 +9,6 @@ import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 
 const styles = (theme) => ({
   form: {
@@ -81,11 +79,18 @@ class Step2 extends Component {
       handleDropdown,
       handleDropdown2,
       handleDropdown3,
+      handleDropdown4,
       handleSubmit,
     } = this.props;
     const Genres = [
       { value: 'Child', label: 'Child' },
       { value: 'Adult', label: 'Adult' },
+    ];
+
+    const languages = [
+      { value: 'english', label: 'English' },
+      { value: 'hindi', label: 'Hindi' },
+      { value: 'malayalam', label: 'Malayalam' },
     ];
 
     const Books = [
@@ -212,6 +217,19 @@ class Step2 extends Component {
                   label="No"
                 />
               </RadioGroup>
+            </label>
+            <label className={classes.label}>
+              Languages comfortable with:
+              <Select
+                className={classes.field}
+                styles={customStyles}
+                value={values.languageSelected}
+                onChange={handleDropdown4}
+                /*onChange={(val) => {
+                handleDropdown('condition', val);
+              }}*/
+                options={languages}
+              ></Select>
             </label>
             <label className={classes.label}>
               Detailed Description:
