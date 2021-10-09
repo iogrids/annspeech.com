@@ -1,10 +1,7 @@
 const nodemailer = require('nodemailer');
-import * as handlebars from 'handlebars';
-import * as fs from 'fs';
-import * as path from 'path';
 
 async function sendMail(req, res) {
-  const htmlToSend2 = `<!doctype html>
+  const childTemplate = `<!doctype html>
   <html>
     <head>
       <meta name="viewport" content="width=device-width">
@@ -179,16 +176,11 @@ async function sendMail(req, res) {
 
   const patientType = req.body.patientType;
 
-  let filePath;
-
   if (patientType === 'Child') {
-    filePath = path.join('./emails/child.hbs');
   } else {
-    filePath = path.join('./emails/adult.hbs');
   }
 
-  const source = fs.readFileSync(filePath, 'utf-8').toString();
-  const template = handlebars.compile(source);
+  const template = childTemplate;
   const replacements = {
     firstName: `${req.body.fullname}`,
   };
@@ -229,7 +221,7 @@ async function sendMail(req, res) {
     to: `${req.body.email}`,
     subject: `${req.body.subject}`,
     text: 'how are you',
-    html: `${htmlToSend2}`,
+    html: `${htmlToSend}`,
   };
 
   await new Promise((resolve, reject) => {
