@@ -29,16 +29,45 @@ async function sendMail(req, res) {
       pass: process.env.SENDGRID_API_KEY,
     },
   });
-  const mailOptions = {
-    from: '"maria@annspeech.com" <maria@annspeech.com>',
+
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log('Server is ready to take our messages');
+        resolve(success);
+      }
+    });
+  });
+
+  const mailData = {
+    from: {
+      name: '"maria@annspeech.com" <maria@annspeech.com>',
+      address: 'maria@annspeech.com',
+    },
+    replyTo: 'maria@annspeech.com',
     to: `${req.body.email}`,
     subject: `${req.body.subject}`,
     text: 'how are you',
     html: htmlToSend,
   };
-  const info = await transporter.sendMail(mailOptions);
-  console.log('Message sent: %s', info.messageId);
-  console.log('Preview URL: %s', 'https://mailtrap.io/inboxes/test/messages/');
+
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
+  });
+
   res.status(200).json({ status: 'OK' });
 }
 
