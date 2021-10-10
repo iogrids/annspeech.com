@@ -9,14 +9,36 @@ export default class MyDocument extends Component {
       <Html lang="en">
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          {/* bemob tag start */}
           <link
             href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          {/* bemob tag end */}
+
+          {/* Google Analytics tag start */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-DFRW4CQGQW"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DFRW4CQGQW');`,
+            }}
+          />
+          {/* Google Analytics tag end */}
+
+          {/* Google Adwords tag start */}
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=AW-944956101"
           />
+
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -27,7 +49,9 @@ export default class MyDocument extends Component {
             `,
             }}
           />
+          {/* Google Adwords tag end */}
 
+          {/* Hotjar tag star */}
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(h,o,t,j,a,r){
@@ -40,6 +64,7 @@ export default class MyDocument extends Component {
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
             }}
           />
+          {/* Hotjar tag end */}
         </Head>
         <body>
           <Main />
