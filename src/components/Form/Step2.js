@@ -91,6 +91,7 @@ class Step2 extends Component {
       { value: 'english', label: 'English' },
       { value: 'hindi', label: 'Hindi' },
       { value: 'malayalam', label: 'Malayalam' },
+      { value: 'kannada', label: 'Kannada' },
     ];
 
     const Books = [
