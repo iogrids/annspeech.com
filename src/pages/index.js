@@ -41,6 +41,7 @@ export default function Home() {
         <title>annspech.com</title>
 
         <meta name="description" content="speech therapy" />
+        <meta name="keywords" content="speech therapy" />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
