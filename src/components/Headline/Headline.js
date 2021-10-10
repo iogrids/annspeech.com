@@ -1,8 +1,7 @@
-import Grid from '@mui/material/Grid';
 import { makeStyles } from '@material-ui/core';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import { useRouter } from 'next/router';
 
 const useStyles = makeStyles((theme) => ({
   mainDiv: {},
@@ -17,6 +16,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Headline = () => {
+  const { query } = useRouter();
+  let headline;
+
+  const toTitleCase = (str) => {
+    return str.replace(/\w\S*/g, function (txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  };
+
+  if (query.headline) {
+    headline = toTitleCase(query.headline);
+  } else {
+    headline = 'Looking for an Online Speech Therapist?';
+  }
   const classes = useStyles();
   return (
     <Box spacing={3} className={classes.mainDiv}>
@@ -26,7 +39,7 @@ const Headline = () => {
         component="div"
         gutterBottom
       >
-        Looking for an Online Speech Therapist?
+        {headline}
       </Typography>
 
       <Typography
