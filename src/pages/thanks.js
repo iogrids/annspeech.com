@@ -13,6 +13,7 @@ export default function Home() {
         <title>annspech.com</title>
 
         <meta name="description" content="Thank you page" />
+        {/* Google adwords conversion pixel start*/}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -24,6 +25,7 @@ export default function Home() {
           async
           src="https://track.annspeech.com/conversion.gif?cid=OPTIONAL&payout=OPTIONAL&txid=OPTIONAL"
         />
+        {/* Google adwords conversion pixel end*/}
       </Head>
       <Container maxWidth="lg">
         <Menu />
