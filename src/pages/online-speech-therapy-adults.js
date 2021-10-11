@@ -40,7 +40,13 @@ export default function Home() {
       <Head>
         <title>annspech.com</title>
 
-        <meta name="description" content="online speech therapy for adults" />
+        <meta
+          name="description"
+          content="A seasoned online speech therapist with over 10+ years experience in
+            handling over 100+ adults for conditions such as Speech Delay due to
+            stroke, Stuttering, Voice disorder, Pronunciation issues, Swallowing
+            issues and other communication difficulties."
+        />
         <meta name="keywords" content="online speech therapy for adults" />
       </Head>
 

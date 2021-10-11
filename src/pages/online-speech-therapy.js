@@ -42,7 +42,11 @@ export default function Home() {
 
         <meta
           name="description"
-          content="A seasoned online speech therapist with 10+ years experience and handled over 100+ clients"
+          content="A seasoned online speech therapist with over 10+ years experience in
+          handling over 100+ clients for conditions such as Speech Delay,
+          Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
+          difficulties and other communication difficulties in Children and
+          Adults!"
         />
         <meta name="keywords" content="online speech therapy" />
       </Head>
