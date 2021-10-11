@@ -63,9 +63,10 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            I handle conditions such as Speech Delay, Stuttering, Cleft Lip &
-            Palate, Unclear Speech, Reading & Writing difficulties and other
-            communication difficulties in Children and Adults!
+            A seasoned online speech therapist with over 10+ years experience in
+            handling over 100+ adults for conditions such as Speech Delay due to
+            stroke, Stuttering, Voice disorder, Pronunciation issues, Swallowing
+            issues and other communication difficulties.
           </Typography>
         </Box>
         <Grid container spacing={2}>
