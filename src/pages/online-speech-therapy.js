@@ -40,7 +40,10 @@ export default function Home() {
       <Head>
         <title>annspech.com</title>
 
-        <meta name="description" content="online speech therapy" />
+        <meta
+          name="description"
+          content="A seasoned online speech therapist with 10+ years experience and handled over 100+ clients"
+        />
         <meta name="keywords" content="online speech therapy" />
       </Head>
 
@@ -63,9 +66,11 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            I handle conditions such as Speech Delay, Stuttering, Cleft Lip &
-            Palate, Unclear Speech, Reading & Writing difficulties and other
-            communication difficulties in Children and Adults!
+            A seasoned online speech therapist with over 10+ years experience
+            and handled over 100+ clients for conditions such as Speech Delay,
+            Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
+            difficulties and other communication difficulties in Children and
+            Adults!
           </Typography>
         </Box>
         <Grid container spacing={2}>
