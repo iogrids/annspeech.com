@@ -45,7 +45,7 @@ export default class MyDocument extends Component {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-944956101', { page_path: window.location.pathname });
+              gtag('config', 'AW-944956101');
             `,
             }}
           />

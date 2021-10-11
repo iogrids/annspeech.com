@@ -21,11 +21,13 @@ export default function Home() {
             `,
           }}
         />
+        {/* Google adwords conversion pixel end*/}
+        {/* Bemob conversion pixel star*/}
         <script
           async
           src="https://track.annspeech.com/conversion.gif?cid=OPTIONAL&payout=OPTIONAL&txid=OPTIONAL"
         />
-        {/* Google adwords conversion pixel end*/}
+        {/* Bemob conversion pixel end*/}
       </Head>
       <Container maxWidth="lg">
         <Menu />
