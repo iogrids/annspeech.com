@@ -60,7 +60,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Looking for an Online Speech Therapist for Your Kid?
+            Online Speech Therapist for Kids?
           </Typography>
 
           <Typography
