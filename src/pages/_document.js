@@ -6,7 +6,7 @@ import React from 'react';
 export default class MyDocument extends Component {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" class="notranslate" translate="no">
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           {/* bemob tag start */}
