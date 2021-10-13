@@ -61,7 +61,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Looking for a Speech Therapist for Online Consultation?
+            Speech Therapist for Online Consultation?
           </Typography>
 
           <Typography
