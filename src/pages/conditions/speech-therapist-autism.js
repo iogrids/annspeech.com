@@ -38,17 +38,17 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>annspech.com</title>
+        <title>Speech therapy for autism - annspech.com</title>
 
         <meta
           name="description"
-          content="A seasoned speech therapist from Thrissur with over 10+ years experience in
+          content="A seasoned online speech therapist with over 10+ years experience in
           handling over 100+ clients for conditions such as Speech Delay,
           Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
           difficulties and other communication difficulties in Children and
           Adults!"
         />
-        <meta name="keywords" content="speech therapy thrissur" />
+        <meta name="keywords" content="online speech therapy" />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
@@ -61,7 +61,8 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Looking for a Speech Therapist in Thrissur?
+            Speech Therapy for Autism - Improve communication Issues in 12
+            Weeks!
           </Typography>
 
           <Typography
@@ -70,11 +71,11 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            A seasoned speech therapist from Thrissur with over 10+ years
-            experience in handling over 100+ clients for conditions such as
-            Speech Delay, Stuttering, Cleft Lip & Palate, Unclear Speech,
-            Reading & Writing difficulties and other communication difficulties
-            in Children and Adults!
+            A seasoned online speech therapist with over 10+ years experience in
+            handling over 100+ clients for conditions such as Speech Delay,
+            Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
+            difficulties and other communication difficulties in Children and
+            Adults!
           </Typography>
         </Box>
         <Grid container spacing={2}>

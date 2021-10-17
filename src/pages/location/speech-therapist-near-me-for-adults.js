@@ -38,16 +38,17 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>Online speech therapy for kids - annspech.com</title>
+        <title>Speech therapist near me for adults - annspech.com</title>
 
         <meta
           name="description"
           content="A seasoned online speech therapist with over 10+ years experience in
-            handling over 100+ kids for conditions such as Speech Delay,
-            Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
-            difficulties and other communication difficulties."
+          handling over 100+ clients for conditions such as Speech Delay,
+          Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
+          difficulties and other communication difficulties in Children and
+          Adults!"
         />
-        <meta name="keywords" content="online speech therapy for kids" />
+        <meta name="keywords" content="online speech therapy" />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
@@ -60,8 +61,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Online Speech Therapist for Kids - Overcome Speech Issues in 12
-            Weeks!
+            Speech Therapist for Adults - Overcome Speech Issues in 12 Weeks!
           </Typography>
 
           <Typography
@@ -71,9 +71,10 @@ export default function Home() {
             gutterBottom
           >
             A seasoned online speech therapist with over 10+ years experience in
-            handling over 100+ kids for conditions such as Speech Delay,
+            handling over 100+ clients for conditions such as Speech Delay,
             Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
-            difficulties and other communication difficulties.
+            difficulties and other communication difficulties in Children and
+            Adults!
           </Typography>
         </Box>
         <Grid container spacing={2}>

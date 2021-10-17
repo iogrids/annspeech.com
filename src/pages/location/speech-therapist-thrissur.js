@@ -38,16 +38,17 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>Online speech therapy for kids - annspech.com</title>
+        <title>Speech therapist in Thrissur - annspech.com</title>
 
         <meta
           name="description"
-          content="A seasoned online speech therapist with over 10+ years experience in
-            handling over 100+ kids for conditions such as Speech Delay,
-            Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
-            difficulties and other communication difficulties."
+          content="A seasoned speech therapist from Thrissur with over 10+ years experience in
+          handling over 100+ clients for conditions such as Speech Delay,
+          Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
+          difficulties and other communication difficulties in Children and
+          Adults!"
         />
-        <meta name="keywords" content="online speech therapy for kids" />
+        <meta name="keywords" content="speech therapy thrissur" />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
@@ -60,8 +61,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Online Speech Therapist for Kids - Overcome Speech Issues in 12
-            Weeks!
+            Speech Therapist in Thrissur - Overcome Speech Issues in 12 Weeks!
           </Typography>
 
           <Typography
@@ -70,10 +70,11 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            A seasoned online speech therapist with over 10+ years experience in
-            handling over 100+ kids for conditions such as Speech Delay,
-            Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
-            difficulties and other communication difficulties.
+            A seasoned speech therapist from Thrissur with over 10+ years
+            experience in handling over 100+ clients for conditions such as
+            Speech Delay, Stuttering, Cleft Lip & Palate, Unclear Speech,
+            Reading & Writing difficulties and other communication difficulties
+            in Children and Adults!
           </Typography>
         </Box>
         <Grid container spacing={2}>

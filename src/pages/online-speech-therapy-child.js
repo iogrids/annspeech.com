@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>annspech.com</title>
+        <title>Online speech therapy for child - annspech.com</title>
 
         <meta
           name="description"
@@ -47,7 +47,10 @@ export default function Home() {
             Stuttering, Cleft Lip & Palate, Unclear Speech, Reading & Writing
             difficulties and other communication difficulties."
         />
-        <meta name="keywords" content="online speech therapy for child" />
+        <meta
+          name="keywords"
+          content="online speech therapy for child, speech therapy"
+        />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
@@ -60,7 +63,8 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Looking for an Online Speech Therapist for Your Child?
+            Speech Therapist for Your Child - Overcome Speech Issues in 12
+            Weeks!
           </Typography>
 
           <Typography

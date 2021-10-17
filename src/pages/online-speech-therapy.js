@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>annspech.com</title>
+        <title>Online speech therapy - annspech.com</title>
 
         <meta
           name="description"
@@ -61,7 +61,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Looking for an Online Speech Therapist?
+            Online Speech Therapist - Overcome Speech Issues in 12 Weeks!
           </Typography>
 
           <Typography

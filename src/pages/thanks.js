@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>annspech.com</title>
+        <title>Speech Therapy - annspech.com</title>
 
         <meta name="description" content="Thank you page" />
         {/* Google adwords conversion pixel start*/}

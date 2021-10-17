@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>annspech.com</title>
+        <title>Online speech therapy for adults - annspech.com</title>
 
         <meta
           name="description"
@@ -47,7 +47,10 @@ export default function Home() {
             stroke, Stuttering, Voice disorder, Pronunciation issues, Swallowing
             issues and other communication difficulties."
         />
-        <meta name="keywords" content="online speech therapy for adults" />
+        <meta
+          name="keywords"
+          content="online speech therapy for adults, speech therapy, online speech therapy"
+        />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
@@ -60,7 +63,8 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Online Speech Therapist for Adults
+            Online Speech Therapist for Adults - Overcome Speech Issues in 12
+            Weeks!
           </Typography>
 
           <Typography
