@@ -6,7 +6,7 @@ import Menu from '../components/Menu/Menu';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Form from '../components/Form/Form';
-import Content from '../components/Content/Content';
+import SpeechTherapy from '../components/Content/SpeechTherapy';
 import HeroBanner from '../components/HeroBanner/HeroBanner';
 import Badge from '../components/Badge/Badge';
 import ContentBanner from '../components/ContentBanner/ContentBanner';
@@ -73,7 +73,7 @@ export default function Home() {
 
           <Form />
         </Grid>
-        <Content />
+        <SpeechTherapy />
         <Grid container spacing={2}>
           <Grid item xs={12} md={4}>
             <ContentBanner />
