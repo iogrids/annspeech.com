@@ -2,20 +2,19 @@ import Head from 'next/head';
 import Grid from '@mui/material/Grid';
 import { makeStyles } from '@material-ui/core';
 import Container from '@mui/material/Container';
-import Menu from '../components/Menu/Menu';
+import Menu from '../../components/Menu/Menu';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Form from '../components/Form/Form';
-import DownSyndrome from '../components/Content/DownSyndrome';
-import HeroBanner from '../components/HeroBanner/HeroBanner';
-import Badge from '../components/Badge/Badge';
-import ContentBanner from '../components/ContentBanner/ContentBanner';
-import Faq from '../components/Faq/Faq';
-import Testimonials from '../components/Testimonials/Testimonials';
-import Contact from '../components/Contact/Contact';
-import Footer from '../components/Footer/Footer';
-import Video from '../components/Video/Video';
-import Pricing from '../components/Pricing/Pricing';
+import Form from '../../components/Form/Form';
+import DownSyndrome from '../../components/Content/DownSyndrome';
+import HeroBanner from '../../components/HeroBanner/HeroBanner';
+import Badge from '../../components/Badge/Badge';
+import ContentBanner from '../../components/ContentBanner/ContentBanner';
+import Faq from '../../components/Faq/Faq';
+import Testimonials from '../../components/Testimonials/Testimonials';
+import Contact from '../../components/Contact/Contact';
+import Footer from '../../components/Footer/Footer';
+import Video from '../../components/Video/Video';
 
 const useStyles = makeStyles((theme) => ({
   mainDiv: {},
@@ -54,7 +53,8 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Looking for a Speech Therapist for Down Syndrome?
+            Introducing Oral Placement Therapy to Outgrow Down's Syndrome in 12
+            Weeks!!
           </Typography>
 
           <Typography
@@ -63,9 +63,10 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            I handle conditions such as Speech Delay, Stuttering, Cleft Lip &
-            Palate, Unclear Speech, Reading & Writing difficulties and other
-            communication difficulties in Children and Adults!
+            I am a certified Level 2 Oral Placement Therapist and I provide Oral
+            Placement Therapy for children with Down’s Syndrome focusing on
+            improving their tongue retraction, muscle strength, stability and
+            endurance for improved speech clarity and feeding skills.
           </Typography>
         </Box>
         <Grid container spacing={2}>
