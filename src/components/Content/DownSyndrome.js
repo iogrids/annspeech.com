@@ -25,7 +25,7 @@ const Content = () => {
         component="div"
         gutterBottom
       >
-        Speech therapy for Down’s Syndrome
+        Speech therapy for Down Syndrome
       </Typography>
 
       <Grid container direction="row" alignItems="center">
@@ -41,25 +41,25 @@ const Content = () => {
             features made them stand apart from other children with
             communication difficulties. Another thing that they all had in
             common was poor speech clarity. Though they were talking, it was
-            difficult to understand their speech. It didn't come as a surprise
-            for me as being a Speech and Language Pathologist I knew good speech
-            clarity required structurally and functionally normal speech
-            articulators ( jaw, lips, tongue, palate etc) . Though with intense
-            speech therapy and exercises, better clarity could be achieved at
-            single word level, these children continued to have affected clarity
-            of speech in phrases and longer sentences.
+            difficult to understand their speech. It didn&apos;t come as a
+            surprise for me as being a Speech and Language Pathologist I knew
+            good speech clarity required structurally and functionally normal
+            speech articulators ( jaw, lips, tongue, palate etc) . Though with
+            intense speech therapy and exercises, better clarity could be
+            achieved at single word level, these children continued to have
+            affected clarity of speech in phrases and longer sentences.
           </Typography>
         </Box>
         <Box spacing={1} className={classes.mainDiv}>
           <Typography variant="body1" gutterBottom>
             A major breakthrough in this scenario happened with Oral Placement
             Therapy (OPT) developed by Sarah Rosenfield Johnson. Her intense
-            work among children with Down’s Syndrome proved that children with
-            Down's Syndrome do not exhibit these features at birth but it is the
-            events that follow after the birth that cause these features and
-            difficulties to develop. However, the good news is that development
-            of these features can be prevented and children can develop speech
-            with better quality through Oral Placement Therapy.
+            work among children with Down&apos;s Syndrome proved that children
+            with Down&apos;s Syndrome do not exhibit these features at birth but
+            it is the events that follow after the birth that cause these
+            features and difficulties to develop. However, the good news is that
+            development of these features can be prevented and children can
+            develop speech with better quality through Oral Placement Therapy.
             (Rosenfield-Johnson, 1997)
           </Typography>
         </Box>
