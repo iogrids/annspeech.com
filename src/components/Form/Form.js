@@ -8,7 +8,6 @@ import Select from '@mui/material/Select';
 import { Component } from 'react';
 import Step1 from './Step1';
 import Step2 from './Step2';
-import { ConstructionOutlined } from '@mui/icons-material';
 import axios from 'axios';
 
 export default class Form extends Component {
@@ -88,8 +87,9 @@ export default class Form extends Component {
   };
 
   handleEmail = async () => {
-    const { firstName, userEmail, selectedOption } = this.state;
-    const values = { firstName, userEmail, selectedOption };
+    const { firstName, userEmail, selectedOption, selectedOption2 } =
+      this.state;
+    const values = { firstName, userEmail, selectedOption, selectedOption2 };
     const subject = 'Greeting from annspeech.com';
     const message = 'How are you preena';
     const res = await fetch('/api/sendmail', {
@@ -99,6 +99,7 @@ export default class Form extends Component {
         subject: subject,
         message: message,
         patientType: values.selectedOption.value,
+        conditionType: values.selectedOption2.value,
       }),
       headers: {
         'Content-Type': 'application/json',
@@ -148,7 +149,7 @@ export default class Form extends Component {
 
     axios({
       method: 'POST',
-      url: 'https://formspree.io/f/moqybkbv',
+      url: 'https://formspree.io/f/mbjqbzbz',
       data: values,
     })
       .then((response) => {

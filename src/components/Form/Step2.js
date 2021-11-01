@@ -96,6 +96,7 @@ class Step2 extends Component {
 
     const Books = [
       { value: 'Autism', label: 'Autism', link: 'Child' },
+      { value: 'Down Syndrome', label: 'Down Syndrome', link: 'Child' },
       { value: 'Speech Delay', label: 'Speech Delay', link: 'Child' },
       { value: 'Unclear Speech', label: 'Unclear Speech', link: 'Child' },
       { value: 'Stuttering', label: 'Stuttering', link: 'Child' },
