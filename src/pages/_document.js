@@ -49,7 +49,7 @@ export default class MyDocument extends Component {
             dangerouslySetInnerHTML={{
               __html: `!(function () {
                 var a = document.createElement("script");
-                (a.type = "text/javascript"), (a.async = !0), (a.src = "https://track.annspeech.com/landing/b14f34d4-5810-4a26-825a-70f07f9e1d78?callback=REPLACE&rule=REPLACE&path=REPLACE&landing=REPLACE&" + window.location.search.substring(1));
+                (a.type = "text/javascript"), (a.async = !0), (a.src = "https://track.annspeech.com/landing/b02d2fa0-8c13-4b80-aea9-7634c5e48582?callback=REPLACE&rule=REPLACE&path=REPLACE&landing=REPLACE&" + window.location.search.substring(1));
                 var b = document.getElementsByTagName("script")[0];
                 b.parentNode.insertBefore(a, b);
               })();`,
