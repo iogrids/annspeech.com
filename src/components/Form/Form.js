@@ -149,7 +149,7 @@ export default class Form extends Component {
 
     axios({
       method: 'POST',
-      url: 'https://formspree.io/f/mbjqbzbz',
+      url: 'https://formspree.io/f/moqybkbv',
       data: values,
     })
       .then((response) => {

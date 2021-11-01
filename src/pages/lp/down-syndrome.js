@@ -53,8 +53,8 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Introducing Oral Placement Therapy to Outgrow Down&apos;s Syndrome
-            in 12 Weeks!!
+            Speech Therapy for Down Syndrome - Introducing Oral Placement
+            Therapy to Outgrow Down&apos;s Syndrome in 12 Weeks!!
           </Typography>
 
           <Typography
