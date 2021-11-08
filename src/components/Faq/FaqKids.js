@@ -7,7 +7,7 @@ const Data = [
   {
     question: 'How is evaluation done? Is it through video calls?',
     answer:
-      'I will get in touch with you initially over emails. This will help me in preparing for the evaluation session. Following this, a video session for assessment will be scheduled mostly on Zoom.',
+      'I will get in touch with you initially over phone/emails. This will help me in preparing for the evaluation session. Following this, a video session for assessment will be scheduled mostly on Zoom.',
   },
   {
     question: 'What is the duration of each session?',

@@ -6,11 +6,11 @@ import Menu from '../../components/Menu/Menu';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Form from '../../components/Form/Form';
-import SpeechTherapyKids from '../../components/Content/SpeechTherapyKids';
+import SpeechTherapyAdults from '../../components/Content/SpeechTherapyAdults';
 import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import Badge from '../../components/Badge/Badge';
 import ContentBanner from '../../components/ContentBanner/ContentBanner';
-import FaqKids from '../../components/Faq/FaqKids';
+import FaqAdults from '../../components/Faq/FaqAdults';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
@@ -39,11 +39,8 @@ export default function Home() {
       <Head>
         <title>annspech.com</title>
 
-        <meta name="description" content="online speech therapy children" />
-        <meta
-          name="keywords"
-          content="online speech therapy, children, kids, child"
-        />
+        <meta name="description" content="online speech therapy adults" />
+        <meta name="keywords" content="online speech therapy, adults" />
       </Head>
 
       <Container className={classes.mainDiv} maxWidth="lg">
@@ -56,7 +53,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            10+ Yrs Experience Handling Online Speech Therapy for Kids!!
+            10+ Yrs Experience Handling Online Speech Therapy for Adults!!
           </Typography>
 
           <Typography
@@ -65,9 +62,9 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            I handle conditions such as Speech Delay, Stuttering, Cleft Lip &
-            Palate, Unclear Speech, Reading & Writing difficulties and other
-            communication difficulties for kids!!
+            I handle conditions such as Speech Delay due to stroke, Stuttering,
+            voice disorder, pronunciation issues and swallowing issues for
+            adults.
           </Typography>
         </Box>
         <Grid container spacing={2}>
@@ -75,7 +72,7 @@ export default function Home() {
 
           <Form />
         </Grid>
-        <SpeechTherapyKids />
+        <SpeechTherapyAdults />
         <Grid container spacing={2}>
           <Grid item xs={12} md={4}>
             <ContentBanner />
@@ -85,7 +82,7 @@ export default function Home() {
             <Video />
           </Grid>
         </Grid>
-        <FaqKids />
+        <FaqAdults />
 
         <Testimonials />
 
