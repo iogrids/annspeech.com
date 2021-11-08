@@ -53,7 +53,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Online Speech Therapy in Hindi.
+            Online Speech Therapy in Hindi
           </Typography>
 
           <Typography
