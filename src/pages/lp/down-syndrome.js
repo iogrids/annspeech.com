@@ -53,7 +53,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Speech Therapy for Down Syndrome
+            Online Speech Therapy for Down Syndrome
           </Typography>
 
           <Typography
