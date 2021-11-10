@@ -53,8 +53,7 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            Speech Therapy for Down Syndrome - Introducing Oral Placement
-            Therapy to Outgrow Down&apos;s Syndrome in 12 Weeks!!
+            Speech Therapy for Down Syndrome
           </Typography>
 
           <Typography
@@ -63,10 +62,8 @@ export default function Home() {
             component="div"
             gutterBottom
           >
-            I am a certified Level 2 Oral Placement Therapist and I provide Oral
-            Placement Therapy for children with Down’s Syndrome focusing on
-            improving their tongue retraction, muscle strength, stability and
-            endurance for improved speech clarity and feeding skills.
+            Prevent development of features associated with Down’s syndrome and
+            achieve clear speech through Oral Placement Therapy.
           </Typography>
         </Box>
         <Grid container spacing={2}>
