@@ -41,7 +41,7 @@ const Content = () => {
         </Box>
         <Box spacing={3} className={classes.mainDiv}>
           <Typography variant="body1" gutterBottom>
-          I have been successfully using a techinique called "Camperdown Program Treatment", developed by the Australian Stuttering Research centre, on my clients with severe stuttering and have seen great success so far. It is a speech restructuring program that helps in achieving stutter-free speech not just in therapy but also in reducing stuttering in everyday speaking situations. You will attain stutter free speech in just a few sessions when the new technique is put to use. The following therapy sessions would focus on training you to use the new technique in day to day communications while focusing more on the naturalness of speech. The program also helps you to self manage stuttering even when the therapy ends to reduce the risk of stuttering appearing later. 
+          I have been successfully using a techinique called &quot;Camperdown Program Treatment&quot;, developed by the Australian Stuttering Research centre, on my clients with severe stuttering and have seen great success so far. It is a speech restructuring program that helps in achieving stutter-free speech not just in therapy but also in reducing stuttering in everyday speaking situations. You will attain stutter free speech in just a few sessions when the new technique is put to use. The following therapy sessions would focus on training you to use the new technique in day to day communications while focusing more on the naturalness of speech. The program also helps you to self manage stuttering even when the therapy ends to reduce the risk of stuttering appearing later. 
           </Typography>
         </Box>
       </Grid>
